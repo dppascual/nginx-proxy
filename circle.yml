@@ -11,9 +11,9 @@ test:
     override:
         - docker run -it dppascual/nginx-proxy:$(cat VERSION) -t
 
-          #deployment:
-          #    hub:
-          #        branch: master
-          #        commands:
-          #            - docker login e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
-              #            - docker push dppascual/nginx_proxy:$(cat VERSION)
+deployment:
+    hub:
+        branch: master
+        commands:
+            - docker login e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
+            - docker push dppascual/nginx_proxy:$(cat VERSION)
