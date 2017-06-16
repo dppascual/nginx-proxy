@@ -9,7 +9,7 @@ dependencies:
 
 test:
     override:
-        - docker run -it dppascual/nginx_proxy:$(cat VERSION) -t
+        - docker run -it dppascual/nginx-proxy:$(cat VERSION) -t
 
           #deployment:
           #    hub:
