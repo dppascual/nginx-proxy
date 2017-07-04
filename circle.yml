@@ -16,4 +16,4 @@ deployment:
         branch: master
         commands:
             - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
-            - docker push dppascual/nginx_proxy:$(cat VERSION)
+            - docker push dppascual/nginx-proxy:$(cat VERSION)
